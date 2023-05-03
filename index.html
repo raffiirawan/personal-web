@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+  
+        <figure class="avatar-box">
+          <img src="./assets/images/profilePhoto.jpeg" alt="Richard hanrick" width="80">
+        </figure>
+  
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Raffi Irawan</h1>
+  
+          <p class="title">Junior Web Developer</p>
+        </div>
+  
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+  
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+  
+      </div>
+  
+      <div class="sidebar-info_more">
+  
+        <div class="separator"></div>
+  
+        <ul class="contacts-list">
+  
+          <li class="contact-item">
+  
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+  
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+  
+              <a href="raffiportfolio22@gmail.com" class="contact-link">raffiportfolio22@gmail.com</a>
+            </div>
+  
+          </li>
+  
+          <li class="contact-item">
+  
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+  
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+  
+              <a href="https://wa.me/082322986767" class="contact-link">082322986767</a>
+            </div>
+  
+          </li>
+  
+          <li class="contact-item">
+  
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+  
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+  
+              <time datetime="2004-12-22">December 22 2004</time>
+            </div>
+  
+          </li>
+  
+          <li class="contact-item">
+  
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+  
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+  
+              <address>Kediri, East Java, Indonesia</address>
+            </div>
+  
+          </li>
+  
+        </ul>
+  
+        <div class="separator"></div>
+  
+        <ul class="social-list">
+  
+          <li class="social-item">
+            <a href="https://wa.me/082322986767" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+  
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/raffi-irawan-b12398261" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+  
+          <li class="social-item">
+            <a href="https://www.instagram.com/raffi.portfolio/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+  
+        </ul>
+  
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+    
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+    
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+    
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+    
+        </ul>
+    
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+    
+        <section class="about-text">
+          <p>
+            I'm Junior Web Programmer from Kediri, Indonesia. I'm studying in SMK Telkom Sidoarjo
+          </p>
+    
+          <p>
+            I am an 18 year old teenager from Kediri, I am now studying at Telkom Sidoarjo Vocational High School majoring in Teknik Jaringan Akses. 
+            I like to learn coding, especially web developing. 
+            I have internship experience at PT Floo ID as a junior web developer using Wordpress, Vue JS, PHP, Laravel, and MySQL 
+          </p>
+        </section>
+    
+    
+        <!--
+          - service
+        -->
+    
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <!-- <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p> -->
+              </div>
+            </li>
+          </ul>
+        </section>
+    
+        <!--
+          - testimonials modal
+        -->
+    
+        <div class="modal-container" data-modal-container>
+    
+          <div class="overlay" data-overlay></div>
+    
+          <section class="testimonials-modal">
+    
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+    
+          </section>
+    
+        </div>
+    
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+    
+        <section class="timeline">
+    
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+    
+            <h3 class="h3">Education</h3>
+          </div>
+    
+          <ol class="timeline-list">
+    
+            <li class="timeline-item">
+    
+              <h4 class="h4 timeline-item-title">SMK Telkom Sidoarjo</h4>
+    
+              <span>2020 - now</span>
+    
+              <p class="timeline-text">
+                Studied at Telkom Sidoarjo Vocational High School majoring in Teknik Jaringan Akses Telekomunikasi (TJAT)
+              </p>
+    
+            </li>
+    
+          </ol>
+    
+        </section>
+    
+        <section class="timeline">
+    
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+    
+            <h3 class="h3">Experience</h3>
+          </div>
+    
+          <ol class="timeline-list">
+    
+            <li class="timeline-item">
+    
+              <h4 class="h4 timeline-item-title">Junior Web Programmer</h4>
+    
+              <span>July - November 2022</span>
+    
+              <p class="timeline-text">
+                Intern at PT Floo ID as a Junior Web Programmer for 5 months <br>
+                Create a website frontend using WordPress and Vue JS <br>
+                Create a website backend using PHP and Laravel
+              </p>
+            </li>
+          </ol>
+    
+          <ol class="timeline-list">
+    
+            <li class="timeline-item">
+    
+              <h4 class="h4 timeline-item-title">Advertising Freelancer</h4> 
+    
+              <span>November 2021 - now</span> 
+    
+              <p class="timeline-text">
+                Worked as a property ad freelancer at the EXIST MAX agency <br>
+                Advertise properties on Facebook and OLX marketplaces
+              </p>
+            </li>
+          </ol>
+    
+        </section>
+    
+        <section class="skill">
+    
+          <h3 class="h3 skills-title">My skills</h3>
+    
+          <ul class="skills-list content-card">
+    
+            <li class="skills-item">
+    
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="70">70%</data>
+              </div>
+    
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+    
+            </li>
+    
+            <li class="skills-item">
+    
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="70">70%</data>
+              </div>
+    
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+    
+            </li>
+    
+            <li class="skills-item">
+    
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="60">60%</data>
+              </div>
+    
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+    
+            </li>
+    
+            <li class="skills-item">
+    
+              <div class="title-wrapper">
+                <h5 class="h5">Laravel</h5>
+                <data value="40">40%</data>
+              </div>
+    
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+    
+            </li>
+    
+          </ul>
+    
+        </section>
+    
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+    
+        <section class="projects">
+    
+          <ul class="filter-list">
+    
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+    
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+    
+            <li class="filter-item">
+              <button data-filter-btn>Certificate</button>
+            </li>
+    
+            <li class="filter-item">
+              <button data-filter-btn>Java Applications</button>
+            </li>
+    
+          </ul>
+    
+          <div class="filter-select-box">
+    
+            <button class="filter-select" data-select>
+    
+              <div class="select-value" data-selecct-value>Select category</div>
+    
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+    
+            </button>
+    
+            <ul class="select-list">
+    
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+    
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+    
+              <li class="select-item">
+                <button data-select-item>Certificate</button>
+              </li>
+    
+              <li class="select-item">
+                <button data-select-item>Java Applications</button>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+          <ul class="project-list">
+    
+            <li class="project-item  active" data-filter-item data-category="certificate">
+              <a href="./assets/images/mikrotikCertificate.png">
+    
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+    
+                  <img src="./assets/images/mikrotikCertificate.png" alt="fundo" loading="lazy">
+                </figure>
+    
+                <h3 class="project-title">Mikrotik Certificate</h3>
+    
+                <p class="project-category">Certificate</p>
+    
+              </a>
+            </li>
+    
+            <li class="project-item  active" data-filter-item data-category="certificate">
+              <a href="./assets/images/toeicCerti.jpeg">
+    
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+    
+                  <img src="./assets/images/toeicCerti.jpeg" alt="brawlhalla" loading="lazy">
+                </figure>
+    
+                <h3 class="project-title">TOEIC Certificate</h3>
+    
+                <p class="project-category">Certificate</p>
+    
+              </a>
+            </li>
+    
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="./assets/images/crudApp.png">
+    
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+    
+                  <img src="./assets/images/crudApp.png" alt="finance" loading="lazy">
+                </figure>
+    
+                <h3 class="project-title">Laravel CRUD</h3>
+    
+                <p class="project-category">Web development</p>
+    
+              </a>
+            </li>
+    
+            <li class="project-item  active" data-filter-item data-category="java applications">
+              <a href="./assets/images/javaProject.png">
+    
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+    
+                  <img src="./assets/images/javaProject.png" alt="dsm." loading="lazy">
+                </figure>
+    
+                <h3 class="project-title">Java Simple Quiz</h3>
+    
+                <p class="project-category">Java Applications</p>
+    
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="./assets/images/coffee-web.png">
+    
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+    
+                  <img src="./assets/images/coffee-web.png" alt="fundo" loading="lazy">
+                </figure>
+    
+                <h3 class="project-title">Coffee Shop Website</h3>
+    
+                <p class="project-category">Web development</p>
+    
+              </a>
+            </li>
+    
+          </ul>
+    
+        </section>
+    
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
